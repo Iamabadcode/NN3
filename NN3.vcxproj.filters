@@ -18,10 +18,10 @@
     <ClCompile Include="src\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Neural_Network\NN.cpp">
+    <ClCompile Include="src\Neural_Network\network_util.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Neural_Network\Initializer.cpp">
+    <ClCompile Include="src\Neural_Network\network_init.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\utilities\benchmark.cpp">
@@ -38,7 +38,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Neural_Network\NN.h">
+    <ClInclude Include="src\Neural_Network\NeuralNet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Neural_Network\Config.h">

@@ -1,6 +1,6 @@
 C:\Users\cianl\source\repos\NN3\src\Application.cpp;C:\Users\cianl\source\repos\NN3\NN3\x64\Debug\Application.obj
-C:\Users\cianl\source\repos\NN3\src\Neural_Network\NN.cpp;C:\Users\cianl\source\repos\NN3\NN3\x64\Debug\NN.obj
-C:\Users\cianl\source\repos\NN3\src\Neural_Network\Initializer.cpp;C:\Users\cianl\source\repos\NN3\NN3\x64\Debug\Initializer.obj
+C:\Users\cianl\source\repos\NN3\src\Neural_Network\network_util.cpp;C:\Users\cianl\source\repos\NN3\NN3\x64\Debug\network_util.obj
+C:\Users\cianl\source\repos\NN3\src\Neural_Network\network_init.cpp;C:\Users\cianl\source\repos\NN3\NN3\x64\Debug\network_init.obj
 C:\Users\cianl\source\repos\NN3\src\utilities\benchmark.cpp;C:\Users\cianl\source\repos\NN3\NN3\x64\Debug\benchmark.obj
 C:\Users\cianl\source\repos\NN3\src\utilities\logger.cpp;C:\Users\cianl\source\repos\NN3\NN3\x64\Debug\logger.obj
 C:\Users\cianl\source\repos\NN3\src\utilities\mathematics.cpp;C:\Users\cianl\source\repos\NN3\NN3\x64\Debug\mathematics.obj

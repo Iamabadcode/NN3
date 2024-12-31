@@ -128,15 +128,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Application.cpp" />
-    <ClCompile Include="src\Neural_Network\NN.cpp" />
-    <ClCompile Include="src\Neural_Network\Initializer.cpp" />
+    <ClCompile Include="src\Neural_Network\network_util.cpp" />
+    <ClCompile Include="src\Neural_Network\network_init.cpp" />
     <ClCompile Include="src\utilities\benchmark.cpp" />
     <ClCompile Include="src\utilities\logger.cpp" />
     <ClCompile Include="src\utilities\mathematics.cpp" />
     <ClCompile Include="src\utilities\SIMD_support.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Neural_Network\NN.h" />
+    <ClInclude Include="src\Neural_Network\NeuralNet.h" />
     <ClInclude Include="src\Neural_Network\Config.h" />
     <ClInclude Include="src\utilities\util.h" />
     <ClInclude Include="src\utilities\util_Config.h" />

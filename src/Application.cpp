@@ -1,4 +1,4 @@
-#include "Neural_Network/NN.h"
+#include "Neural_Network/NeuralNet.h"
 #include "utilities/util.h"
 
 void dot_product_(float* a, float* b, float* res, int lengtha, int lengthres) {
@@ -12,14 +12,14 @@ void dot_product_(float* a, float* b, float* res, int lengtha, int lengthres) {
 
 int main() 
 {
-	log_config::setLogLevel(INFO);
+	log_config::setLogLevel(DEBUG);
 	
 	timer::startTimer();
-	NN net({2,4,2});
+	NN net(std::vector<unsigned int>{2,4,2});
 	timer::endTimer();
 
 	logger::consoleLog(std::to_string(timer::getElapsedSeconds()), INFO);
-
+	
 	net.print_memory();
 		
 }

@@ -1,2 +1,8 @@
 ﻿  Application.cpp
+  network_init.cpp
+C:\Users\cianl\source\repos\NN3\src\Neural_Network\network_init.cpp(8,77): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\cianl\source\repos\NN3\src\Neural_Network\network_init.cpp(21,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\cianl\source\repos\NN3\src\Neural_Network\network_init.cpp(25,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\cianl\source\repos\NN3\src\Neural_Network\network_init.cpp(74,22): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
   NN3.vcxproj -> C:\Users\cianl\source\repos\NN3\x64\Debug\NN3.exe
