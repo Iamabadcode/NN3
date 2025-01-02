@@ -1,8 +1,23 @@
 ﻿  Application.cpp
-  network_init.cpp
-C:\Users\cianl\source\repos\NN3\src\Neural_Network\network_init.cpp(8,77): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\cianl\source\repos\NN3\src\Neural_Network\network_init.cpp(21,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\cianl\source\repos\NN3\src\Neural_Network\network_init.cpp(25,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\cianl\source\repos\NN3\src\Neural_Network\network_init.cpp(74,22): warning C4018: '<': signed/unsigned mismatch
+  backProp.cpp
+C:\Users\cianl\source\repos\NN3\src\utilities\util.h(37,69): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\cianl\source\repos\NN3\src\utilities\util.h(38,79): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\cianl\source\repos\NN3\src\utilities\util.h(37,69): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\cianl\source\repos\NN3\src\utilities\util.h(38,79): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  fwrdProp.cpp
+C:\Users\cianl\source\repos\NN3\src\utilities\util.h(37,69): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\cianl\source\repos\NN3\src\utilities\util.h(38,79): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  init.cpp
+C:\Users\cianl\source\repos\NN3\src\utilities\util.h(37,69): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\cianl\source\repos\NN3\src\utilities\util.h(38,79): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\cianl\source\repos\NN3\src\Neural_Network\init.cpp(8,56): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\cianl\source\repos\NN3\src\Neural_Network\init.cpp(22,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\cianl\source\repos\NN3\src\Neural_Network\init.cpp(41,73): warning C5051: attribute [[unlikely]] requires at least '/std:c++20'; ignored
+C:\Users\cianl\source\repos\NN3\src\Neural_Network\init.cpp(49,18): warning C5051: attribute [[unlikely]] requires at least '/std:c++20'; ignored
+C:\Users\cianl\source\repos\NN3\src\Neural_Network\init.cpp(107,36): warning C4018: '<': signed/unsigned mismatch
+  misc.cpp
+C:\Users\cianl\source\repos\NN3\src\utilities\util.h(37,69): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\cianl\source\repos\NN3\src\utilities\util.h(38,79): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\cianl\source\repos\NN3\src\Neural_Network\misc.cpp(12,20): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
   NN3.vcxproj -> C:\Users\cianl\source\repos\NN3\x64\Debug\NN3.exe

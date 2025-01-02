@@ -14,12 +14,8 @@ int main()
 {
 	log_config::setLogLevel(DEBUG);
 	
-	timer::startTimer();
 	NN net(std::vector<unsigned int>{2,4,2});
-	timer::endTimer();
 
-	logger::consoleLog(std::to_string(timer::getElapsedSeconds()), INFO);
-	
 	net.print_memory();
 		
 }

@@ -1,6 +1,8 @@
 #pragma once
-#include "util_Config.h"
 #include <string>
+
+#include "util_Config.h"
+
 
 #define ASSERT(x) if(!(x)) __debugbreak();
 
@@ -19,7 +21,7 @@ namespace logger
 namespace log_config 
 {
 	void setLogLevel(const unsigned char t_log_level);
-	const unsigned char getLogLevel();
+	[[nodiscard]] const unsigned char getLogLevel();
 }
 
 namespace math
@@ -27,8 +29,16 @@ namespace math
 	struct vec2 { float x, y; };
 	struct vec2i { int x, y; };
 
-	float random(vec2);
-	float random_int(vec2i);
+	[[nodiscard]] float random(vec2) noexcept;
+	[[nodiscard]] float random_int(vec2i) noexcept;
+
+	[[nodiscard]] inline float ReLU(float x) noexcept { return x > 0 ? x : 0; }
+	[[nodiscard]] inline float ReLU_d(float x) noexcept { return (x > 0.0f) ? 1.0f : 0.0f; }
+	[[nodiscard]] inline float sigmoid(float x) noexcept { return 1.0f / (1.0f + exp(-x)); }
+	[[nodiscard]] inline float sigmoid_d(float x) noexcept { float sigmoid_value = (1.0f / (1.0f + exp(-x))); return sigmoid_value * (1.0f - sigmoid_value); }
+	[[nodiscard]] inline float tanh(float x) noexcept { return tanh(x); }
+	[[nodiscard]] inline float tanh_d(float x) noexcept { float tanh_value = tanh(x); return 1.0f - (tanh_value * tanh_value); }
+
 }
 
 enum Units : unsigned char
@@ -39,11 +49,11 @@ namespace timer
 {
 	void startTimer();
 	void endTimer();
-	double getElapsedSeconds();
-	long long getElapsedTime(Units unit);
+	[[nodiscard]] double getElapsedSeconds();
+	[[nodiscard]] long long getElapsedTime(Units unit);
 }
 
 // SIMD
-const bool check_avx512_support();
-const bool check_avx_support();
+[[nodiscard]] const bool check_avx512_support();
+[[nodiscard]] const bool check_avx_support();
 void logSIMDSupport();
