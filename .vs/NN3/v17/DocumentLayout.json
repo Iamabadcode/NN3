@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\cianl\\source\\repos\\NN3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F5028131-8707-4D6D-90E3-73977439F2A5}|NN3.vcxproj|C:\\Users\\cianl\\source\\repos\\NN3\\src\\Neural_Network\\init.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F5028131-8707-4D6D-90E3-73977439F2A5}|NN3.vcxproj|solutionrelative:src\\Neural_Network\\init.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5028131-8707-4D6D-90E3-73977439F2A5}|NN3.vcxproj|C:\\Users\\cianl\\source\\repos\\NN3\\src\\Neural_Network\\NeuralNet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F5028131-8707-4D6D-90E3-73977439F2A5}|NN3.vcxproj|solutionrelative:src\\Neural_Network\\NeuralNet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F5028131-8707-4D6D-90E3-73977439F2A5}|NN3.vcxproj|C:\\Users\\cianl\\source\\repos\\NN3\\src\\utilities\\util.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F5028131-8707-4D6D-90E3-73977439F2A5}|NN3.vcxproj|solutionrelative:src\\utilities\\util.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -17,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F5028131-8707-4D6D-90E3-73977439F2A5}|NN3.vcxproj|C:\\Users\\cianl\\source\\repos\\NN3\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F5028131-8707-4D6D-90E3-73977439F2A5}|NN3.vcxproj|solutionrelative:src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5028131-8707-4D6D-90E3-73977439F2A5}|NN3.vcxproj|C:\\Users\\cianl\\source\\repos\\NN3\\src\\Neural_Network\\init.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F5028131-8707-4D6D-90E3-73977439F2A5}|NN3.vcxproj|solutionrelative:src\\Neural_Network\\init.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5028131-8707-4D6D-90E3-73977439F2A5}|NN3.vcxproj|C:\\Users\\cianl\\source\\repos\\NN3\\src\\Neural_Network\\NeuralNet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F5028131-8707-4D6D-90E3-73977439F2A5}|NN3.vcxproj|solutionrelative:src\\Neural_Network\\NeuralNet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "NeuralNet.h",
               "DocumentMoniker": "C:\\Users\\cianl\\source\\repos\\NN3\\src\\Neural_Network\\NeuralNet.h",
               "RelativeDocumentMoniker": "src\\Neural_Network\\NeuralNet.h",
               "ToolTip": "C:\\Users\\cianl\\source\\repos\\NN3\\src\\Neural_Network\\NeuralNet.h",
               "RelativeToolTip": "src\\Neural_Network\\NeuralNet.h",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAmwBEAAABFAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAmwCEAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-31T01:23:19.566Z",
               "IsPinned": true,
@@ -52,13 +52,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "init.cpp",
               "DocumentMoniker": "C:\\Users\\cianl\\source\\repos\\NN3\\src\\Neural_Network\\init.cpp",
               "RelativeDocumentMoniker": "src\\Neural_Network\\init.cpp",
               "ToolTip": "C:\\Users\\cianl\\source\\repos\\NN3\\src\\Neural_Network\\init.cpp",
               "RelativeToolTip": "src\\Neural_Network\\init.cpp",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAHwAAAABAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAmwAsAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-02T14:06:03.299Z",
               "IsPinned": true,
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "backProp.cpp",
               "DocumentMoniker": "C:\\Users\\cianl\\source\\repos\\NN3\\src\\Neural_Network\\backProp.cpp",
               "RelativeDocumentMoniker": "src\\Neural_Network\\backProp.cpp",
@@ -75,8 +75,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-31T17:43:16.21Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -88,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "fwrdProp.cpp",
               "DocumentMoniker": "C:\\Users\\cianl\\source\\repos\\NN3\\src\\Neural_Network\\fwrdProp.cpp",
               "RelativeDocumentMoniker": "src\\Neural_Network\\fwrdProp.cpp",
@@ -96,12 +95,11 @@
               "RelativeToolTip": "src\\Neural_Network\\fwrdProp.cpp",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-02T13:48:16.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-02T13:48:16.816Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "util.h",
               "DocumentMoniker": "C:\\Users\\cianl\\source\\repos\\NN3\\src\\utilities\\util.h",
               "RelativeDocumentMoniker": "src\\utilities\\util.h",
@@ -114,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Application.cpp",
               "DocumentMoniker": "C:\\Users\\cianl\\source\\repos\\NN3\\src\\Application.cpp",
               "RelativeDocumentMoniker": "src\\Application.cpp",
@@ -122,8 +120,7 @@
               "RelativeToolTip": "src\\Application.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-31T00:51:10.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T00:51:10.147Z"
             }
           ]
         }

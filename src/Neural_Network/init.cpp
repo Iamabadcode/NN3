@@ -9,8 +9,9 @@ NN::NN(const std::vector<unsigned int>& _dimensions)
 		m_dimensions(m_layer_count), m_input_count(_dimensions[0]),
 
 		m_input(nullptr),
+		// value*, value*, value*, bias*, bias*, bias*, grad*, grad* (...)
 		m_neuron_value(new float*[m_layer_count * PARAMETER_COUNT_NEURON]),
-		m_neuron_bias(m_neuron_value + m_layer_count),	// value*, value*, value*, bias*, bias*, bias*, grad*, grad* (...)
+		m_neuron_bias(m_neuron_value + m_layer_count), 
 		m_neuron_gradient(m_neuron_bias + m_layer_count),
 		m_neuron_step(m_neuron_gradient + m_layer_count),
 														
