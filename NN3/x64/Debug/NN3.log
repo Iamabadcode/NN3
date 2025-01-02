@@ -1,7 +1,7 @@
 ﻿  Application.cpp
-  backProp.cpp
 C:\Users\cianl\source\repos\NN3\src\utilities\util.h(37,69): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
 C:\Users\cianl\source\repos\NN3\src\utilities\util.h(38,79): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  backProp.cpp
 C:\Users\cianl\source\repos\NN3\src\utilities\util.h(37,69): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
 C:\Users\cianl\source\repos\NN3\src\utilities\util.h(38,79): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   fwrdProp.cpp
@@ -19,5 +19,19 @@ C:\Users\cianl\source\repos\NN3\src\Neural_Network\init.cpp(107,36): warning C40
 C:\Users\cianl\source\repos\NN3\src\utilities\util.h(37,69): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
 C:\Users\cianl\source\repos\NN3\src\utilities\util.h(38,79): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 C:\Users\cianl\source\repos\NN3\src\Neural_Network\misc.cpp(12,20): warning C4018: '<': signed/unsigned mismatch
+  SIMD_support.cpp
+C:\Users\cianl\source\repos\NN3\src\utilities\SIMD_support.cpp(30,23): warning C4101: 'ebx': unreferenced local variable
+C:\Users\cianl\source\repos\NN3\src\utilities\SIMD_support.cpp(30,28): warning C4101: 'ecx': unreferenced local variable
+C:\Users\cianl\source\repos\NN3\src\utilities\SIMD_support.cpp(30,33): warning C4101: 'edx': unreferenced local variable
+C:\Users\cianl\source\repos\NN3\src\utilities\SIMD_support.cpp(40,9): warning C4551: function call missing argument list
+C:\Users\cianl\source\repos\NN3\src\utilities\SIMD_support.cpp(43,9): warning C4551: function call missing argument list
+  benchmark.cpp
+C:\Users\cianl\source\repos\NN3\src\utilities\util.h(37,69): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\cianl\source\repos\NN3\src\utilities\util.h(38,79): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  logger.cpp
+C:\Users\cianl\source\repos\NN3\src\utilities\logger.cpp(16,2): warning C4984: 'if constexpr' is a C++17 language extension
+  mathematics.cpp
+C:\Users\cianl\source\repos\NN3\src\utilities\mathematics.cpp(19,13): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
   Generating Code...
+C:\Users\cianl\source\repos\NN3\src\utilities\benchmark.cpp(40,1): warning C4715: 'timer::getElapsedTime': not all control paths return a value
   NN3.vcxproj -> C:\Users\cianl\source\repos\NN3\x64\Debug\NN3.exe

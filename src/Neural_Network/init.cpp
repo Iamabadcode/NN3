@@ -5,16 +5,16 @@
 
 
 NN::NN(const std::vector<unsigned int>& _dimensions)
-	:	m_id(++count), m_total_value_count(0), m_layer_count(_dimensions.size() - 1), m_dimensions(m_layer_count),
-		
-		m_input_count(_dimensions[0]),
+	:	m_id(++count), m_total_value_count(0), m_layer_count(_dimensions.size() - 1), 
+		m_dimensions(m_layer_count), m_input_count(_dimensions[0]),
+
 		m_input(nullptr),
-		m_neuron_value(new float*[m_layer_count * PARAMETER_COUNT_NEURON]), // all neuron pointers in one spot
-		m_neuron_bias(m_neuron_value + m_layer_count),
-		m_neuron_gradient(m_neuron_bias + m_layer_count), //	value*, value*, value*, bias*, bias*, bias*, grad*, grad* (...)
-		m_neuron_step(m_neuron_gradient + m_layer_count),	//	initialization in this ways foes not affect usage
+		m_neuron_value(new float*[m_layer_count * PARAMETER_COUNT_NEURON]),
+		m_neuron_bias(m_neuron_value + m_layer_count),	// value*, value*, value*, bias*, bias*, bias*, grad*, grad* (...)
+		m_neuron_gradient(m_neuron_bias + m_layer_count),
+		m_neuron_step(m_neuron_gradient + m_layer_count),
 														
-		m_weight(new float*[(m_layer_count) * PARAMETER_COUNT_WEIGHT]), // all weight block in one spot
+		m_weight(new float*[(m_layer_count) * PARAMETER_COUNT_WEIGHT]),
 		m_weight_step(m_weight + m_layer_count)
 {
 	ASSERT(m_layer_count > 0 && m_layer_count < 1000);
@@ -24,16 +24,16 @@ NN::NN(const std::vector<unsigned int>& _dimensions)
 		m_dimensions[i] = _dimensions[i + 1];
 	}
 
-	// 1. allocate memory based on "float" size & dimentions of network
+	// Allocate memory
 	{
 		m_total_value_count = m_input_count;
-		for (unsigned int i = 0; i < m_layer_count; i++) // sum of neurons memory requirement
+		for (unsigned int i = 0; i < m_layer_count; i++) //neurons memory requirement
 		{
 			m_total_value_count += m_dimensions[i] * PARAMETER_COUNT_NEURON;
 		}
 
-		m_total_value_count += m_input_count * m_dimensions[0] * PARAMETER_COUNT_WEIGHT; // first layer of weights
-		for (unsigned int i = 1; i < m_layer_count; i++) // sum of weights memory requirement
+		m_total_value_count += m_input_count * m_dimensions[0] * PARAMETER_COUNT_WEIGHT;
+		for (unsigned int i = 1; i < m_layer_count; i++) //weights memory requirement
 		{
 			m_total_value_count += m_dimensions[i - 1] * m_dimensions[i] * PARAMETER_COUNT_WEIGHT;
 		}
@@ -59,7 +59,7 @@ NN::NN(const std::vector<unsigned int>& _dimensions)
 		total_memory += m_total_value_count * sizeof(float);
 	}
 
-	//			2. get addresses from memory for arraylike access
+	// Get layer addresses
 	{
 		for (unsigned int offset_in_allocation = 0, i = 0; i < m_layer_count; i++)
 		{
@@ -85,9 +85,9 @@ NN::NN(const std::vector<unsigned int>& _dimensions)
 		}
 	}
 
-	//			3. assign random values to weigths and biases
+	// Randomize weights and biases
 	{
-		for (unsigned int i_weight = 0; i_weight < m_input_count * m_dimensions[0]; i_weight++) // first weight layer
+		for (unsigned int i_weight = 0; i_weight < m_input_count * m_dimensions[0]; i_weight++)
 		{
 			m_weight[0][i_weight] = math::random(WEIGHT_INIT_RANGE);
 			m_weight_step[0][i_weight] = 0;
@@ -118,14 +118,19 @@ NN::NN(const std::vector<unsigned int>& _dimensions)
 	logger::consoleLog("Initialized network " + std::to_string(m_id), INFO);
 	logger::consoleLog("Allocated " + std::to_string(m_total_value_count) + " * " + std::to_string(sizeof(float)) + " bytes of memory.", SUB_INFO);
 	logger::consoleLog("Total initialized memory: " + std::to_string(total_memory) + " bytes", SUB_INFO);
+	
 	m_input[0] = 1;
 	m_input[1] = 1;
 	fwrdProp();
+	backProp();
 }
 
-NN::~NN() {
+NN::~NN() 
+{
 	_aligned_free(m_input);
+
 	delete[] m_neuron_value;
 	delete[] m_weight;
+
 	logger::consoleLog("Released network " + std::to_string(m_id), INFO);
 }
